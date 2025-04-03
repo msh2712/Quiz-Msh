@@ -9,7 +9,7 @@ html {
 
 
 :root {
-  --bg-light: linear-gradient(135deg, #c0ebfc, #e2bdf8, #ffc8dd, #bde0fe);
+  --bg-light: white;
   --blur-bg: rgba(255, 255, 255, 0.2);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   --text-dark: #000;
