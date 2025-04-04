@@ -6,12 +6,12 @@ import { BiLogoRedux } from "react-icons/bi";
 import { GiHook } from "react-icons/gi";
 
 const logo = [
-    { topic: "HTML", icon: <LiaHtml5 /> , class : "html" },
-    { topic: "CSS", icon: <FaCss3Alt /> ,class : "css" },
-    { topic: "jawascript", icon: <FaNodeJs /> ,class : "js" },
-    { topic: "react", icon: <FaReact /> , class : "react"},
-    { topic: "hook", icon: <GiHook /> , class : "hook" },
-    { topic: "Redux", icon: <BiLogoRedux /> ,class : "redux" }
+    { name: "html", icon: <LiaHtml5 /> , class : "html" },
+    { name: "css", icon: <FaCss3Alt /> ,class : "css" },
+    { name: "jawasrt", icon: <FaNodeJs /> ,class : "js" },
+    { name: "react", icon: <FaReact /> , class : "react"},
+    { name: "hook", icon: <GiHook /> , class : "hook" },
+    { name: "Redux", icon: <BiLogoRedux /> ,class : "redux" }
 ];
 
 export default logo;

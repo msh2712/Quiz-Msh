@@ -9,7 +9,7 @@ html {
 
 
 :root {
-  --bg-light: linear-gradient(135deg, #c0ebfc, #e2bdf8, #ffc8dd, #bde0fe);
+  --bg-light: white;
   --blur-bg: rgba(255, 255, 255, 0.2);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   --text-dark: #000;
@@ -67,11 +67,12 @@ a {
 
 .glass-card {
   width: 90vw;
-  height: 90vh;
   border-radius: 15px;
   margin-top: 30px;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   color: var(--text-dark);
@@ -238,7 +239,7 @@ a {
 }
 
 @media (max-width: 576px) {
-  .msh { height: 58px; }
+  .msh { height: 68px; }
   .h4 { font-size: 10px; }
   .ms { width: 80%; }
   .ans { font-size: 14px;
@@ -247,9 +248,7 @@ a {
  .qui{
   font-size: 18px;
  }
-.glass-card{
-  height: 90vh;
-}
+
 .logoofquiz{
   font-size: 53px;
 }
@@ -281,7 +280,7 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid red;
   position: absolute;
   top: 0;
   left: 0;
@@ -330,7 +329,7 @@ a {
   width: 85%;
   height: 85%;
   border-radius: 50%;
-  border: 2px solid #fdfcfc;
+  border: 2px solid red;
   font-size: 32px;
   line-height: 125px;
   text-align: center;
@@ -339,63 +338,6 @@ a {
   left: 7.5%;
 }
 
-.progress.yellow .progress-left .progress-bar{
-  animation: loading-3 1s linear forwards 1.8s;
-}
-
-@keyframes loading-1{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-  }
-}
-@keyframes loading-2{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(144deg);
-      transform: rotate(144deg);
-  }
-}
-@keyframes loading-3{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-  }
-}
-@keyframes loading-4{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(36deg);
-      transform: rotate(36deg);
-  }
-}
-@keyframes loading-5{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(126deg);
-      transform: rotate(126deg);
-  }
-}
-@media only screen and (max-width: 990px){
-  .progress{ margin-bottom: 20px; }
-}
 .red{
  color: red;
 }
